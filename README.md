@@ -1,2 +1,4 @@
 # ios-Calc
-Basic iOS calculator for web
+iOS calculator for website
+
+
