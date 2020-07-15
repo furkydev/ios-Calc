@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Calcuator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calc-container">
+        <div id="result" class="screen">
+            <p></p>
+        </div>
+        <div class="row-1" style="cursor: pointer;">
+            <div id="C" class="column-1-clear" onclick="clearAll()">C</div>
+            <div id="mod" class="column-2-mod" onclick="doOpposite()">&#xb1</div>
+            <div id="%" class="column-3-percent" onclick="doPercent()">%</div>
+            <div id="/" class="column-4-divide" onclick="storeMod()">&#247</div>
+        </div>
+        <div class="row-2" style="cursor: pointer;">
+            <div id="7" class="column-1" onclick="displayValue()">7</div>
+            <div id="8" class="column-2" onclick="displayValue()">8</div>
+            <div id="9" class="column-3" onclick="displayValue()">9</div>
+            <div id="*" class="column-4-multiply" onclick="storeMod()">x</div>
+        </div>
+        <div class="row-3" style="cursor: pointer;">
+            <div id="4" class="column-1" onclick="displayValue()">4</div>
+            <div id="5" class="column-2" onclick="displayValue()">5</div>
+            <div id="6" class="column-3" onclick="displayValue()">6</div>
+            <div id="-" class="column-4-subtract" onclick="storeMod()">-</div>
+        </div>
+        <div class="row-4" style="cursor: pointer;">
+            <div id="1" class="column-1" onclick="displayValue()">1</div>
+            <div id="2" class="column-2" onclick="displayValue()">2</div>
+            <div id="3" class="column-3" onclick="displayValue()">3</div>
+            <div id="+" class="column-4-plus" onclick="storeMod()">+</div>
+        </div>
+        <div class="row-5" style="cursor: pointer;">
+            <div id="0" class="column-1-zero" onclick="displayValue()">0</div>
+            <div id="." class="column-3-dot" onclick="makeInt()">.</div>
+            <div id="calculate" class="column-4-equals" onclick="calculate()">=</div>
+        </div>
+    </div>
+</body>
+
+</html>
